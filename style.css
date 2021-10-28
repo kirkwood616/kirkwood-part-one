@@ -1,0 +1,112 @@
+body {
+  background-color: white;
+  font-family: "Bungee", cursive;
+  margin: 0;
+}
+
+a {
+  color: #7944e6;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #10fdff;
+}
+
+li {
+  display: inline-block;
+  padding-left: 25px;
+}
+
+header {
+  display: flex;
+  margin: 0 50px 5px 50px;
+}
+
+main {
+  margin: 0 50px;
+}
+
+h2 {
+  line-height: 1;
+  margin: 0;
+}
+
+p {
+  margin: 4px 0 0 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.about {
+  background-color: #ff00ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.about-text {
+  width: 100%;
+}
+
+.food-truck {
+  width: 50%;
+  /* width: 250px; */
+  margin: 15px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: #7944e6 solid 5px;
+  height: 400px;
+  width: 300px;
+  margin: 20px;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.card-image {
+  width: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .about-text {
+    width: 50%;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .food-truck {
+    max-width: 400px;
+    /* width: 50%; */
+    padding: 15px;
+  }
+}
